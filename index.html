@@ -59,6 +59,7 @@
       font-size: 0.9rem;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -81,170 +82,193 @@
       and I plan to document these interests here as part of my learning journey.
     </p>
   </div>
+ 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cosmology Notes</title>
 
-  
- <div class="section">
-  <h2>Inflation & Early Universe Cosmology</h2>
+<!-- Math rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <p>
-    Inflation is a period of accelerated expansion proposed to have occurred in
-    the very early universe. It provides elegant solutions to several problems
-    of standard Big Bang cosmology, including the horizon problem, flatness
-    problem, and the absence of unwanted relics. It also explains the origin of
-    the primordial fluctuations that later grew into galaxies and large-scale
-    structure.
-  </p>
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0b0f17;
+  color: #e6e6e6;
+  display: flex;
+}
 
-  <h3>Introduction</h3>
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  background: #111827;
+  padding: 20px;
+  overflow-y: auto;
+}
 
-  <p>
-    The observed universe is remarkably homogeneous and isotropic on large
-    scales. However, according to standard FLRW cosmology, distant regions of
-    the Cosmic Microwave Background (CMB) should never have been in causal
-    contact. Inflation proposes a brief era of exponential expansion that
-    stretched a tiny, causally connected region to scales much larger than the
-    observable universe.
-  </p>
+.sidebar h2 {
+  color: #7dd3fc;
+  font-size: 18px;
+}
 
-  <h3>The Horizon Problem</h3>
+.sidebar a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 8px 0;
+  font-size: 14px;
+}
 
-  <p>
-    The standard Big Bang model predicts that the early universe contained many
-    causally disconnected regions. Nevertheless, the CMB exhibits nearly
-    identical temperatures across the sky, with fluctuations of only one part
-    in one hundred thousand.
-  </p>
+.sidebar a:hover {
+  color: #38bdf8;
+}
 
-  <p>
-    This apparent contradiction is known as the Horizon Problem and serves as
-    one of the strongest motivations for inflation.
-  </p>
+/* Main content */
+.main {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
 
-  <h3>Slow-Roll Inflation</h3>
+.section {
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1f2937;
+}
 
-  <p>
-    Inflation is typically driven by a scalar field known as the inflaton.
-    During slow roll, the potential energy of the field dominates over its
-    kinetic energy:
-  </p>
+.section h1, .section h2 {
+  color: #38bdf8;
+}
 
-  <p style="text-align:center;">
-    ρ<sub>ϕ</sub> ≈ V(ϕ)
-  </p>
+.subsection {
+  margin-top: 25px;
+}
 
-  <p>
-    The slow evolution of the field produces an approximately constant Hubble
-    parameter and an era of accelerated expansion.
-  </p>
+.subsection h3 {
+  color: #a78bfa;
+}
 
-  <h3>Number of e-Folds</h3>
+code {
+  background: #1f2937;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+</style>
+</head>
 
-  <p>
-    The duration of inflation is measured using the number of e-folds, N.
-    One e-fold corresponds to the scale factor increasing by a factor of e.
-  </p>
+<body>
 
-  <p style="text-align:center;">
-    N = ln(a<sub>f</sub>/a<sub>i</sub>)
-  </p>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Cosmology Notes</h2>
 
-  <p>
-    Successful inflation generally requires more than sixty e-folds of
-    expansion in order to solve the horizon and flatness problems.
-  </p>
+  <a href="#inflation">Inflation</a>
+  <a href="#slowroll">Slow-Roll Inflation</a>
+  <a href="#reheating">Reheating</a>
 
-  <h3>Chaotic Inflation</h3>
+  <hr style="border-color:#1f2937">
 
-  <p>
-    One of the simplest inflationary models is the quadratic potential:
-  </p>
+  <a href="#cmb">CMB</a>
+  <a href="#friedmann">Friedmann Equations</a>
+  <a href="#perturbations">Perturbations</a>
+</div>
 
-  <p style="text-align:center;">
-    V(ϕ) = ½m²ϕ²
-  </p>
+<!-- MAIN CONTENT -->
+<div class="main">
 
-  <p>
-    For this model, the slow-roll parameters become:
-  </p>
+<!-- ===================== INFLATION ===================== -->
+<div class="section" id="inflation">
+  <h1>Inflation</h1>
 
-  <p style="text-align:center;">
-    ε<sub>V</sub> = η<sub>V</sub>
-    = 2(M<sub>Pl</sub>/ϕ)²
-  </p>
+  <div class="subsection">
+    <h3>The Horizon Problem</h3>
+    <p>
+      FRW cosmology predicts causally disconnected regions, yet the universe is highly uniform.
+    </p>
+    <p><b>distance = c × time</b></p>
+  </div>
 
-  <p>
-    Inflation occurs while ε<sub>V</sub> &lt; 1, implying:
-  </p>
+  <div class="subsection">
+    <h3>Conformal Time</h3>
+    <p>\( ds^2 = a^2(\tau)(-d\tau^2 + d\chi^2) \)</p>
+    <p>\( \tau = \int \frac{dt}{a(t)} \)</p>
+  </div>
 
-  <p style="text-align:center;">
-    ϕ &gt; √2 M<sub>Pl</sub>
-  </p>
+  <div class="subsection">
+    <h3>Hubble Radius</h3>
+    <p>\( (aH)^{-1} \)</p>
+    <p>Inflation requires shrinking Hubble radius.</p>
+  </div>
 
-  <p>
-    The largest observable CMB scales are generated approximately sixty
-    e-folds before the end of inflation.
-  </p>
+  <div class="subsection">
+    <h3>60 e-Folds</h3>
+    <p>\( N \gtrsim 60 \)</p>
+  </div>
+</div>
 
-  <h3>Reheating</h3>
+<!-- ===================== SLOW ROLL ===================== -->
+<div class="section" id="slowroll">
+  <h1>Slow-Roll Inflation</h1>
 
-  <p>
-    When inflation ends, the slow-roll conditions break down and the inflaton
-    rapidly rolls toward the minimum of its potential. The universe at this
-    stage contains very little ordinary matter or radiation.
-  </p>
+  <div class="subsection">
+    <h3>Approximation</h3>
+    <p>\( \frac{1}{2}\dot{\Phi}^2 \ll V(\Phi) \)</p>
+    <p>\( 3H\dot{\Phi} + V'(\Phi) \approx 0 \)</p>
+  </div>
 
-  <p>
-    A mechanism is therefore required to convert the energy stored in the
-    inflaton into ordinary particles. This process is known as reheating.
-  </p>
+  <div class="subsection">
+    <h3>Slow-roll parameters</h3>
+    <p>\( \epsilon_V = \frac{M_{pl}^2}{2}(\frac{V'}{V})^2 \)</p>
+    <p>\( \eta_V = M_{pl}^2 \frac{V''}{V} \)</p>
+  </div>
+</div>
 
-  <h4>Scalar Field Oscillations</h4>
+<!-- ===================== REHEATING ===================== -->
+<div class="section" id="reheating">
+  <h1>Reheating</h1>
 
-  <p>
-    Near the minimum of its potential, the inflaton can be approximated by:
-  </p>
+  <div class="subsection">
+    <h3>End of Inflation</h3>
+    <p>\( \epsilon \to 1 \)</p>
+  </div>
 
-  <p style="text-align:center;">
-    V(ϕ) ≈ ½m²ϕ²
-  </p>
+  <div class="subsection">
+    <h3>Oscillations</h3>
+    <p>\( \ddot{\Phi} + 3H\dot{\Phi} + m^2\Phi = 0 \)</p>
+  </div>
 
-  <p>
-    The field then obeys the Klein–Gordon equation:
-  </p>
+  <div class="subsection">
+    <h3>Result</h3>
+    <p>Universe becomes radiation dominated.</p>
+  </div>
+</div>
 
-  <p style="text-align:center;">
-    ϕ̈ + 3Hϕ̇ + m²ϕ = 0
-  </p>
+<!-- ===================== PLACEHOLDER SECTIONS ===================== -->
+<div class="section" id="cmb">
+  <h1>CMB</h1>
+  <p>Cosmic Microwave Background section placeholder.</p>
+</div>
 
-  <p>
-    This equation describes a damped harmonic oscillator, where the expansion
-    of the universe provides the damping term.
-  </p>
+<div class="section" id="friedmann">
+  <h1>Friedmann Equations</h1>
+  <p>Cosmological dynamics section placeholder.</p>
+</div>
 
-  <p>
-    Once m ≫ H, the inflaton oscillates rapidly around the minimum of its
-    potential. Averaging over many oscillations yields:
-  </p>
+<div class="section" id="perturbations">
+  <h1>Perturbations</h1>
+  <p>Structure formation section placeholder.</p>
+</div>
 
-  <p style="text-align:center;">
-    ρ<sub>ϕ</sub> ∝ a<sup>-3</sup>
-  </p>
+</div>
 
-  <p>
-    This scaling is identical to pressureless matter. Consequently, the
-    oscillating inflaton behaves like a dust component with an average pressure
-    close to zero.
-  </p>
-
-  <p style="text-align:center;">
-    ⟨P<sub>ϕ</sub>⟩ ≈ 0
-  </p>
-
-  <p>
-    As the inflaton decays into ordinary particles, its energy is transferred
-    into a thermal bath of radiation. This marks the completion of reheating
-    and the beginning of the standard hot Big Bang evolution.
-  </p>
+</body>
+</html>
+ 
 
 </div>
   <div class="section">
