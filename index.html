@@ -83,106 +83,503 @@
       and I plan to document these interests here as part of my learning journey.
     </p>
   </div>
-
-  <!-- ===================== UPDATED INFLATION SECTION ===================== -->
-  <div class="section">
-    <h2>Inflation</h2>
+<div class="section">
+  <h2>Inflation & Early Universe Cosmology</h2>
+  <p>
+  <section>
+    <h2>The Horizon Problem</h2>
 
     <p>
-      Inflation is a period of accelerated expansion in the early universe that explains
-      the observed large-scale homogeneity and isotropy.
+        The Friedmann–Robertson–Walker (FRW) cosmology successfully describes an expanding universe,
+        but it cannot explain why the universe appears so homogeneous and isotropic today.
+        According to the standard Big Bang model, the early universe consisted of many causally
+        disconnected regions that could not exchange information. Despite this, observations of
+        the Cosmic Microwave Background (CMB) reveal nearly identical temperatures and densities
+        across the sky. This contradiction is known as the Horizon Problem.
     </p>
 
-    <h3>The Horizon Problem</h3>
+    <h3>Size of a Causal Patch</h3>
+
     <p>
-      Standard FRW cosmology predicts causally disconnected regions in the early universe,
-      yet the CMB shows almost identical temperatures everywhere.
+        A causal patch is a region in which all points can communicate with one another.
+        Since no signal can travel faster than light, the size of such a region is limited
+        by the distance light can travel during a given interval of time.
     </p>
-    <p><b>Causal limit:</b> distance = c × time</p>
 
     <h3>Conformal Time</h3>
-    <p>
-      \( ds^2 = a^2(\tau)(-d\tau^2 + d\chi^2) \)
-    </p>
-    <p>
-      \( \tau = \int \frac{dt}{a(t)} \)
-    </p>
-    <p>
-      Light travels at 45° in conformal coordinates:
-      \( d\chi = \pm d\tau \)
-    </p>
 
-    <h3>Cosmological Horizons</h3>
-
-    <p><b>Particle horizon:</b></p>
-    <p>\( \chi_{ph} = \int_0^t \frac{dt'}{a(t')} \)</p>
-
-    <p><b>Event horizon:</b></p>
-    <p>\( \chi_{eh} = \int_t^\infty \frac{dt'}{a(t')} \)</p>
-
-    <h3>Comoving Hubble Radius</h3>
     <p>
-      \( (aH)^{-1} \)
-    </p>
-    <p>
-      Inflation requires:
-      \( \frac{d}{dt}(aH)^{-1} < 0 \)
+        In cosmology, it is often useful to replace physical time with conformal time,
+        defined by
     </p>
 
     <p>
-      This is equivalent to accelerated expansion:
-      \( \ddot{a} > 0 \)
-    </p>
-
-    <h3>CMB Uniformity</h3>
-    <p>
-      Temperature fluctuations:
-      \( \Delta T / T \sim 10^{-5} \)
-    </p>
-    <p>
-      Standard cosmology implies ~\(10^9\) causally disconnected regions on the sky.
-    </p>
-
-    <h3>Solving the Horizon Problem</h3>
-    <p>
-      Inflation stretches space so that regions now far apart were once in causal contact.
-    </p>
-    <p>
-      Conformal time becomes extremely large during inflation, allowing thermal equilibrium.
-    </p>
-
-    <h3>60 e-Fold Requirement</h3>
-    <p>
-      The amount of expansion is measured by:
-      \( N = \ln(a_f/a_i) \)
-    </p>
-    <p>
-      Successful inflation requires:
-      \( N \gtrsim 60 \)
+        τ = ∫ dt / a(t)
     </p>
 
     <p>
-      This ensures that observable CMB modes originate from a single causally connected patch.
+        This transformation makes the paths of photons appear as straight lines at 45°
+        on spacetime diagrams, simplifying the analysis of causal structure.
+    </p>
+
+    <h3>Particle Horizon</h3>
+
+    <p>
+        The particle horizon represents the largest distance from which light could have
+        reached an observer since the beginning of the universe. It therefore defines the
+        boundary of the observable universe at a given time.
+    </p>
+
+    <h3>Event Horizon</h3>
+
+    <p>
+        The event horizon determines the furthest distance from which an observer can ever
+        receive signals in the future. Unlike the particle horizon, it concerns future
+        observability rather than past observability.
+    </p>
+
+    <h3>The Hubble Radius</h3>
+
+    <p>
+        The comoving Hubble radius, (aH)<sup>-1</sup>, provides another way of understanding
+        causal structure. It characterizes the scale over which physical processes can remain
+        in causal contact at a given moment. During standard radiation- and matter-dominated
+        expansion, the comoving Hubble radius grows with time.
+    </p>
+
+    <h3>Why Is the CMB So Uniform?</h3>
+
+    <p>
+        Around 380,000 years after the Big Bang, electrons and protons combined to form
+        neutral hydrogen. As a result, photons decoupled from matter and began travelling
+        freely through space. These photons are observed today as the Cosmic Microwave
+        Background (CMB).
+    </p>
+
+    <p>
+        The CMB is remarkably uniform, exhibiting temperature fluctuations of only about
+        one part in one hundred thousand. However, calculations based on standard Big Bang
+        cosmology show that many regions of the CMB sky were never in causal contact before
+        photon decoupling. Nevertheless, they possess nearly identical temperatures.
+    </p>
+
+    <p>
+        This apparent contradiction is the Horizon Problem and serves as one of the primary
+        motivations for cosmic inflation.
+    </p>
+</section>
+<section>
+  <h2>Inflation as the Solution</h2>
+
+  <div class="subsection">
+    <h3>A Shrinking Hubble Sphere</h3>
+
+    <p>
+      The horizon problem arises because, in standard cosmology, the comoving Hubble radius grows with time.
+      Consequently, regions that are widely separated today were once separated by more than a Hubble radius
+      and could never have communicated.
+    </p>
+
+    <p>The solution is an early epoch where the comoving Hubble radius shrinks:</p>
+
+    <p>\[
+      \frac{d}{dt}(aH)^{-1} < 0
+    \]</p>
+
+    <p>
+      If this phase lasts long enough, regions now far apart were once inside the same Hubble volume and could
+      thermalize before being stretched apart.
+    </p>
+
+    <p>
+      For shrinking Hubble radius:
+      \[
+        \frac{d}{da}(aH)^{-1} < 0
+      \]
+    </p>
+
+    <p>
+      Using:
+      \[
+        (aH)^{-1} \propto a^{\frac{1}{2}(1+3w)}
+      \]
+    </p>
+
+    <p>
+      This implies:
+      \[
+        1 + 3w < 0 \quad \Rightarrow \quad w < -\frac{1}{3}
+      \]
+    </p>
+
+    <p>
+      Ordinary matter does not satisfy this:
+    </p>
+
+    <p>
+      Radiation: \( w = \frac{1}{3} \)<br>
+      Matter: \( w = 0 \)
+    </p>
+
+    <p>
+      Inflation therefore requires negative pressure beyond standard matter.
     </p>
   </div>
 
-  <!-- ===================== REST OF YOUR ORIGINAL SITE (UNCHANGED) ===================== -->
+  <div class="subsection">
+    <h3>Solving the Horizon Problem</h3>
 
+    <p>
+      The particle horizon is:
+      \[
+        \chi_{\rm ph} = \int \frac{dt}{a} = \int (aH)^{-1} d\ln a
+      \]
+    </p>
+
+    <p>
+      With:
+      \[
+        (aH)^{-1} \propto a^\alpha, \quad \alpha = \frac{1}{2}(1+3w)
+      \]
+    </p>
+
+    <p>
+      If \( w < -\frac{1}{3} \), then \( \alpha < 0 \), and early times dominate:
+    </p>
+
+    <p>
+      \[
+        \tau = \frac{2H_0^{-1}}{1+3w} a^{\frac{1}{2}(1+3w)}
+      \]
+    </p>
+
+    <p>
+      As \( a_i \to 0 \), we get:
+      \[
+        \tau_i \to -\infty
+      \]
+    </p>
+
+    <p>
+      This means the universe has effectively infinite conformal past, allowing causal contact across regions
+      now widely separated.
+    </p>
+
+    <p>
+      Inflation replaces the initial singular surface with a reheating surface.
+    </p>
+  </div>
+
+  <div class="subsection">
+    <h3>Required Duration: ~60 e-Folds</h3>
+
+    <p>
+      For inflation to solve the horizon problem:
+      \[
+        (a_0 H_0)^{-1} < (a_i H_i)^{-1}
+      \]
+    </p>
+
+    <p>
+      During inflation: \( H \approx \text{constant} \)<br>
+      After reheating: \( H \propto a^{-2} \)
+    </p>
+
+    <p>
+      Number of e-folds:
+      \[
+        N = \ln\!\left(\frac{a_f}{a_i}\right)
+      \]
+    </p>
+
+    <p>
+      Required:
+      \[
+        N \gtrsim 60
+      \]
+    </p>
+
+    <p>
+      CMB scales exit the horizon about 60 e-folds before inflation ends.
+    </p>
+  </div>
+
+  <div class="subsection">
+    <h3>Particle Horizon vs Hubble Radius</h3>
+
+    <p><b>Particle Horizon</b></p>
+
+    <p>
+      \[
+        \chi_{\rm ph} = \int_{t_i}^{t} \frac{dt'}{a(t')}
+      \]
+    </p>
+
+    <p>
+      Measures total causal past — how far signals could have traveled since the beginning.
+    </p>
+
+    <p><b>Comoving Hubble Radius</b></p>
+
+    <p>
+      \[
+        (aH)^{-1}
+      \]
+    </p>
+
+    <p>
+      Measures instantaneous communication scale during one Hubble time.
+    </p>
+
+    <p><b>During Inflation:</b></p>
+
+    <p>
+      \[
+        \chi_{\rm ph} \gg (aH)^{-1}
+      \]
+    </p>
+
+    <p>
+      Inflation stretches previously connected regions beyond the Hubble scale,
+      without destroying their causal history.
+    </p>
+  </div>
+<h2>Conditions for Inflation</h2>
+
+<h3>Accelerated Expansion</h3>
+
+<p>
+The most fundamental definition of inflation is that the comoving Hubble radius shrinks with time:
+</p>
+
+<p>\[
+\frac{d}{dt}(aH)^{-1}<0
+\]</p>
+
+<p>
+To relate this condition to the expansion of the universe, note that
+</p>
+
+<p>\[
+(aH)^{-1} = \frac{1}{aH} = \frac{1}{\dot a}
+\]</p>
+
+<p>
+Taking a time derivative:
+</p>
+
+<p>\[
+\frac{d}{dt}(aH)^{-1}
+=
+\frac{d}{dt}\left(\dot a^{-1}\right)
+=
+-\frac{\ddot a}{\dot a^{\,2}}
+\]</p>
+
+<p>
+Therefore:
+</p>
+
+<p>\[
+\frac{d}{dt}(aH)^{-1}<0
+\qquad \Longleftrightarrow \qquad
+\ddot a>0
+\]</p>
+
+<p>
+Thus, inflation is equivalent to a period of accelerated expansion.
+</p>
+
+
+<h3>The Slow-Roll Parameter ε</h3>
+
+<p>
+The evolution of the Hubble parameter is characterized by the first slow-roll parameter:
+</p>
+
+<p>\[
+\epsilon \equiv -\frac{\dot H}{H^{2}}
+\]</p>
+
+<p>
+It is often convenient to express time evolution in terms of the number of e-folds:
+</p>
+
+<p>\[
+N \equiv \ln a
+\]</p>
+
+<p>
+For which:
+</p>
+
+<p>\[
+dN = d\ln a = H\,dt
+\]</p>
+
+<p>
+Using this relation:
+</p>
+
+<p>\[
+\epsilon = -\frac{d\ln H}{dN}
+\]</p>
+
+<p>
+The derivative of the comoving Hubble radius may be written as:
+</p>
+
+<p>\[
+\frac{d}{dt}(aH)^{-1}
+=
+-\frac{1}{a}(1-\epsilon)
+\]</p>
+
+<p>
+Inflation therefore requires:
+</p>
+
+<p>\[
+\epsilon < 1
+\]</p>
+
+<p>
+This provides an equivalent and extremely useful criterion for inflation.
+</p>
+
+<p>
+For inflation to continue over many e-folds, the Hubble parameter must evolve slowly. Hence:
+</p>
+
+<p>\[
+\epsilon \ll 1
+\]</p>
+
+<p>
+so that \(H\) remains nearly constant during the inflationary era.
+</p>
+
+
+<h3>Quasi–de Sitter Expansion</h3>
+
+<p>
+The idealized case of de Sitter space corresponds to:
+</p>
+
+<p>\[
+H = \text{constant}
+\]</p>
+
+<p>
+for which:
+</p>
+
+<p>\[
+a(t)\propto e^{Ht}
+\]</p>
+
+<p>
+Since:
+</p>
+
+<p>\[
+\dot H = 0
+\]</p>
+
+<p>
+we have:
+</p>
+
+<p>\[
+\epsilon = 0
+\]</p>
+
+<p>
+A universe with exact de Sitter expansion would inflate forever.
+</p>
+
+<p>
+Realistic inflation is instead quasi–de Sitter. In this regime:
+</p>
+
+<p>\[
+0 < \epsilon \ll 1
+\]</p>
+
+<p>
+so the Hubble parameter changes slowly with time.
+</p>
+
+<p>
+Inflation eventually ends when:
+</p>
+
+<p>\[
+\epsilon \rightarrow 1
+\]</p>
+
+<p>
+To ensure that inflation persists long enough, one introduces a second slow-roll parameter:
+</p>
+
+<p>\[
+\eta \equiv \frac{d\ln\epsilon}{dN} = \frac{\dot\epsilon}{H\epsilon}
+\]</p>
+
+<p>
+The condition:
+</p>
+
+<p>\[
+|\eta| < 1
+\]</p>
+
+<p>
+implies that the fractional change in \(\epsilon\) per Hubble time is small.
+</p>
+
+<p>
+When:
+</p>
+
+<p>\[
+|\eta| \ll 1
+\]</p>
+
+<p>
+\(\epsilon\) remains nearly constant and inflation continues for many e-folds.
+Conversely:
+</p>
+
+<p>\[
+|\eta| > 1
+\]</p>
+
+<p>
+means inflation will soon terminate.
+</p>
+
+<p>
+The slow-roll conditions can therefore be summarized as:
+</p>
+
+<p>\[
+\epsilon < 1, \quad |\eta| < 1
+\]</p>
+  </p>
 </div>
 
-</body>
 
-<!-- EVERYTHING BELOW IS EXACTLY YOUR ORIGINAL CONTENT UNCHANGED -->
-
+    
 <div class="section">
   <h2>Astronomy</h2>
   <ul>
   </ul>
 </div>
 
-<div class="section">
-  <h2>Quantum Computing & Linear Algebra</h2>
-  <ul>
+<section class="section">
+  <h2>Linear Algebra & Quantum Computing</h2>
+
   <p>
     These notes review the core concepts of linear algebra and build toward the mathematical
     framework used in quantum computing and quantum mechanics. The focus is on vector spaces,
@@ -240,25 +637,63 @@
 
   <h3>Solution of Linear Systems</h3>
 
+  <p>
+    A system A x = b may be:
+  </p>
+
   <ul>
     <li><b>Consistent:</b> at least one solution exists</li>
     <li><b>Inconsistent:</b> no solution exists</li>
   </ul>
 
+  <p>
+    A homogeneous system A x = 0 always has at least the trivial solution x = 0.
+  </p>
+
   <h3>Vectors</h3>
 
   <p>
-    Vectors represent physical quantities with magnitude and direction.
+    In physics, vectors represent quantities with magnitude and direction.
+    In mathematics, vectors are abstract elements of vector spaces.
+  </p>
+
+  <p>
+    A system of equations can also be viewed geometrically as a linear combination:
+  </p>
+
+  <p style="text-align:center;">
+    x a₁ + y a₂ = b
+  </p>
+
+  <p>
+    meaning we express a vector as a combination of basis vectors.
   </p>
 
   <h3>Vector Spaces</h3>
 
   <p>
-    Vector spaces form the foundation of linear algebra and quantum theory.
+    A vector space consists of:
   </p>
 
+  <ul>
+    <li>A set V</li>
+    <li>Vector addition</li>
+    <li>Scalar multiplication</li>
+    <li>A field F</li>
   </ul>
-</div>
+
+  <p>
+    These structures form the foundation of linear algebra and quantum theory.
+  </p>
+
+  <h3>Why This Matters in Quantum Computing</h3>
+
+  <p>
+    Quantum states are represented as vectors in a Hilbert space, and quantum operations
+    are represented as matrices acting on these vectors. This makes linear algebra
+    the mathematical backbone of quantum computing.
+  </p>
+</section>
 
 <div class="section">
   <h2>Paintings & Sketches</h2>
